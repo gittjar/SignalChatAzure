@@ -1,6 +1,4 @@
-# SignalChat Azure
+# SignalRChat Azure
 
-- Test versio for DevOps pipelines
-- Triggered deployment
-
-tag: releasewww
+- Working pipelines and DevOps
+- See working webapp
