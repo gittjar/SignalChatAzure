@@ -18,3 +18,22 @@ btn.addEventListener('click', function handleClick(event) {
     // clear input field
     msgInput.value = '';
 });
+
+
+function isKeyPressed(event) {
+    var x = document.getElementById("shiftkey");
+    if (event.shiftKey) {
+        x.innerHTML = "Shift näppäintä on painettu!";
+    } else {
+        x.innerHTML = "Shift näppäintä ei ole painettu!";
+    }
+}
+
+var input = document.getElementById("messageInput");
+input.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("sendButton").click();
+    }
+});
+
