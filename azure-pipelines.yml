@@ -37,10 +37,3 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'dropscazure'
     publishLocation: 'Container'
-- task: AzureWebApp@1
-  inputs:
-    azureSubscription: 'PalveluyhteysAzure'
-    appType: 'webApp'
-    appName: 'signalchatjarno'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
-    deploymentMethod: 'auto'
